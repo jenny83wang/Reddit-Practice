@@ -15,8 +15,8 @@ reddit = praw.Reddit(client_id= "********",client_secret= "******",user_agent= "
 
 from datetime import datetime
 
-#14subreddits
-subreddit = reddit.subreddit('CoronavirusUK+Coronavirus+unitedkingdom+AskUK+CoronavirusMemes+CoronavirusRecession+COVID19+LockdownSkepticism +CoronavirusUKCasual+Coronavirus_help_UK+COVID19_support+COVID19positive+StayingAtHome+CovidAnxiety')
+#10subreddits
+subreddit = reddit.subreddit('CoronavirusUK+Coronavirus+unitedkingdom+CoronavirusRecession+COVID19+CoronavirusUKCasual+Coronavirus_help_UK+COVID19_support+COVID19positive+CovidAnxiety')
 
 top_subreddit = subreddit.top()
 top_subreddit = subreddit.top(limit=10000)
