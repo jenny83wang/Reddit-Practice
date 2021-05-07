@@ -15,12 +15,12 @@ reddit = praw.Reddit(client_id= "********",client_secret= "******",user_agent= "
 
 from datetime import datetime
 
-#10subreddits
-subreddit = reddit.subreddit('CoronavirusUK+Coronavirus+unitedkingdom+CoronavirusRecession+COVID19+CoronavirusUKCasual+Coronavirus_help_UK+COVID19_support+COVID19positive+CovidAnxiety')
+#3subreddits
+subreddit = reddit.subreddit('CoronavirusUK+Coronavirus+unitedkingdom+COVID19')
 
 top_subreddit = subreddit.top()
-top_subreddit = subreddit.top(limit=10000)
-for submission in subreddit.top(limit=10000):
+top_subreddit = subreddit.top(limit=1000)
+for submission in subreddit.top(limit=1000):
     print(submission.title, submission.id)
 topics_dict = { "title":[], \
                 "score":[], \
